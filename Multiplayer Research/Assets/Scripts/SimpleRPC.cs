@@ -1,11 +1,10 @@
 using Unity.NetCode;
 using UnityEngine;
 
-public class SimpleRPC : IRpcCommand 
+public struct SimpleRPC : IRpcCommand 
 {
 
     public int value;
 
-    //https://youtu.be/HpUmpw_N8BA
 
 }
