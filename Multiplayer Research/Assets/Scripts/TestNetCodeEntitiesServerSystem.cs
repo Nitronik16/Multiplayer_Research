@@ -22,7 +22,7 @@ partial struct TestNetCodeEntitiesServerSystem : ISystem
             in SystemAPI.Query<RefRO<SimpleRPC>, RefRO<ReceiveRpcCommandRequest>>().WithEntityAccess()) 
         { 
 
-            Debug.Log("Recieved Rpc: " + simpleRpc.ValueRO.value);
+            Debug.Log("Recieved Rpc: " + simpleRpc.ValueRO.value + "::" + recieveRPCCommandRequest.ValueRO.SourceConnection);
             entityCommandBuffer.DestroyEntity(entity);
 
         }
